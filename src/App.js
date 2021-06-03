@@ -1,4 +1,4 @@
-import { FaqContainer } from "./containers/faqs";
+import { FaqContainer } from "./containers/faq";
 import { FooterContainer } from "./containers/footer";
 import { JumbotronContainer } from "./containers/jumbotron";
 
