@@ -42,7 +42,7 @@ export const Button = styled.button`
     height: 50px;
     font-size: 16px;
     margin-top: 20px;
-    font-weight: bold;
+    font-weight: 600;
   }
 
   img {
