@@ -1,11 +1,13 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import { Home, Browse, SignIn, SignUp } from './pages';
 import * as ROUTES from './constants/routes';
+import { useAuth } from './hooks';
+import { Home, Browse, SignIn, SignUp } from './pages';
 import { IsUserRedirect, ProtectedRoute } from './helpers/protecting-routes';
 
 export default function App() {
-  const user = true;
+  const { user } = useAuth();
+  
   return (
     <Router>
       <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_UP}>
