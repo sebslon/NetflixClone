@@ -12,9 +12,9 @@ export default function useAuth() {
     const listener = firebase.auth().onAuthStateChanged((authUser) => {
       if (authUser) {
         const { displayName, email, photoURL } = authUser;
-        const userData = { displayName, email, photoURL }
+        const userData = { displayName, email, photoURL };
 
-        localStorage.setItem('authUser', JSON.stringify({ userData }));
+        localStorage.setItem('authUser', JSON.stringify(userData));
         setUser(userData);
       } else {
         localStorage.removeItem('authUser');
