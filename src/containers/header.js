@@ -3,7 +3,6 @@ import { Header } from '../components';
 
 import logo from '../logo.svg';
 
-
 export function HeaderContainer({ children }) {
   return (
     <Header>
