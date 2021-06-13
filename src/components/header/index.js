@@ -12,6 +12,7 @@ import {
   Link,
   Logo,
   Picture,
+  PlayButton,
   Profile,
   Search,
   SearchIcon,
@@ -101,3 +102,7 @@ Header.Search = function HeaderSearch({
     </Search>
   );
 };
+
+Header.PlayButton = function HeaderPlayButton({ children, ...otherProps }) {
+  return <PlayButton {...otherProps}>{children}</PlayButton>
+}
