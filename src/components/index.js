@@ -1,4 +1,5 @@
 export { default as Accordion } from './accordion';
+export { default as Card } from './card';
 export { default as CtaForm } from './cta-form';
 export { default as Feature } from './feature';
 export { default as Footer } from './footer';
