@@ -85,6 +85,7 @@ export const Feature = styled.div`
   background-position-x: right;
   background-repeat: no-repeat;
   background-color: #000;
+  margin: 20px 0;
 
   @media (max-width: 1000px) {
     height: auto;
@@ -157,6 +158,10 @@ export const Meta = styled.div`
 
 export const Entities = styled.div`
   display: flex;
+
+  @media (min-width: 1550px) {
+    justify-content: space-around;
+  }
 `;
 
 export const Item = styled.div`
