@@ -1,35 +1,36 @@
 import { render } from "@testing-library/react";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import { Form } from "../../components";
-
-jest.mock("react-router-dom");
 
 describe("<Form />", () => {
   it("Renders <Form /> with populated data", () => {
     const { container, getByText, getByPlaceholderText } = render(
-      <Form>
-        <Form.Title>Sign In Now</Form.Title>
-        <Form.Base>
-          <Form.Input placeholder="Email address" onChange={() => {}} />
-          <Form.Input
-            type="password"
-            placeholder="Password"
-            onChange={() => {}}
-          />
-          <Form.Submit type="submit" disabled>
-            Sign In
-          </Form.Submit>
-        </Form.Base>
+      <Router>
+        <Form>
+          <Form.Title>Sign In Now</Form.Title>
+          <Form.Base>
+            <Form.Input placeholder="Email address" onChange={() => {}} />
+            <Form.Input
+              type="password"
+              placeholder="Password"
+              onChange={() => {}}
+            />
+            <Form.Submit type="submit" disabled>
+              Sign In
+            </Form.Submit>
+          </Form.Base>
 
-        <Form.Text>
-          New to Netflix? <Form.Link to="/signup">Sign up now.</Form.Link>
-        </Form.Text>
+          <Form.Text>
+            New to Netflix? <Form.Link to="/signup">Sign up now.</Form.Link>
+          </Form.Text>
 
-        <Form.TextSmall>
-          This page is protected by Google reCAPTCHA to ensure you're not a bot.
-          Learn more.
-        </Form.TextSmall>
-      </Form>
+          <Form.TextSmall>
+            This page is protected by Google reCAPTCHA to ensure you're not a
+            bot. Learn more.
+          </Form.TextSmall>
+        </Form>
+      </Router>
     );
 
     expect(

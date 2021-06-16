@@ -5,14 +5,12 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Header } from "../../components";
 
 describe("<Header />", () => {
-  jest.mock("react-router-dom");
-
   it("Renders the basic <Header /> with a background", () => {
     const { container, getByText, getByTestId } = render(
       <Router>
         <Header>
           <Header.Frame>
-            <Header.Logo src="/logo.svg" alt="Netflix" />
+            <Header.Logo to="/" src="/logo.svg" alt="Netflix" />
             <Header.TextLink active="true">TestLink</Header.TextLink>
           </Header.Frame>
         </Header>

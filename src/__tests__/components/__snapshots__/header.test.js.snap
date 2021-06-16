@@ -9,7 +9,7 @@ exports[`<Header /> Renders the basic <Header /> with a background 1`] = `
     class="header__Container-djltcn-2 kjZpcb"
   >
     <a
-      href=""
+      href="/"
     >
       <img
         alt="Netflix"
