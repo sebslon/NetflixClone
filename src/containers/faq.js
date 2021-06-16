@@ -21,6 +21,5 @@ export function FaqContainer() {
         <CtaForm.Button>Try it now!</CtaForm.Button>
       </CtaForm>
     </Accordion>
-
   );
 }

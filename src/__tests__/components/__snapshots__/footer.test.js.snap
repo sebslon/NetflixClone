@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> Renders the complete <Footer /> with data 1`] = `
+<div
+  class="sc-bdnxRM hmqChs"
+>
+  <p
+    class="sc-eCApnc ktdPsL"
+  >
+    Questions? Contact us.
+  </p>
+  <p
+    class="sc-gKAaRy kmMFLK"
+  />
+  <div
+    class="sc-dlnjwi dubkBm"
+  >
+    <div
+      class="sc-gtsrHT duFeDV"
+    >
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        FAQ
+      </a>
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Investor Relations
+      </a>
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Ways to watch
+      </a>
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Corporate Information
+      </a>
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Netflix Originals
+      </a>
+    </div>
+    <div
+      class="sc-gtsrHT duFeDV"
+    >
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Help Center
+      </a>
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Jobs
+      </a>
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Terms of Use
+      </a>
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Contact Us
+      </a>
+    </div>
+    <div
+      class="sc-gtsrHT duFeDV"
+    >
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Account
+      </a>
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Redeem Gift Cards
+      </a>
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Privacy
+      </a>
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Speed Test
+      </a>
+    </div>
+    <div
+      class="sc-gtsrHT duFeDV"
+    >
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Media Centre
+      </a>
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Buy Gift Cards
+      </a>
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Cookie Preferences
+      </a>
+      <a
+        class="sc-hKFxyN bRMMUI"
+        href="#"
+      >
+        Legal Notices
+      </a>
+    </div>
+  </div>
+  <p
+    class="sc-gKAaRy kmMFLK"
+  />
+  <p
+    class="sc-jSFjdj fTyxii"
+  >
+    Netflix Norway
+  </p>
+   
+</div>
+`;
