@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> Renders the basic <Header /> with a background 1`] = `
+<div
+  class="header__Background-djltcn-0 dlgEfJ"
+  data-testid="header-bg"
+>
+  <div
+    class="header__Container-djltcn-2 kjZpcb"
+  >
+    <a
+      href=""
+    >
+      <img
+        alt="Netflix"
+        class="header__Logo-djltcn-11 fdUOZV"
+        src="/logo.svg"
+      />
+    </a>
+    <p
+      class="header__Link-djltcn-3 jKcjTD"
+    >
+      TestLink
+    </p>
+  </div>
+</div>
+`;
+
+exports[`<Header /> Renders the basic <Header /> without a background 1`] = `
+<div
+  class="header__Container-djltcn-2 kjZpcb"
+>
+  <a
+    href=""
+  >
+    <img
+      alt="Netflix"
+      class="header__Logo-djltcn-11 fdUOZV"
+      src="/logo.svg"
+    />
+  </a>
+  <a
+    class="header__ButtonLink-djltcn-12 UaWRW"
+    href=""
+  >
+    Sign In
+  </a>
+  <p
+    class="header__Link-djltcn-3 dFxyeL"
+  >
+    TestLink
+  </p>
+</div>
+`;
+
+exports[`<Header /> Renders the full <Header /> with a background 1`] = `
+<div
+  class="header__Background-djltcn-0 nJJZH"
+  data-testid="header-bg"
+  src="joker1"
+>
+  <div
+    class="header__Container-djltcn-2 kjZpcb"
+  >
+    <div
+      class="header__Group-djltcn-1 NcEJn"
+    >
+      <a
+        href=""
+      >
+        <img
+          alt="Netflix"
+          class="header__Logo-djltcn-11 fdUOZV"
+          src="/images/logo.svg"
+        />
+      </a>
+      <p
+        class="header__Link-djltcn-3 dFxyeL"
+      >
+        Series
+      </p>
+      <p
+        class="header__Link-djltcn-3 dFxyeL"
+      >
+        Films
+      </p>
+    </div>
+    <div
+      class="header__Group-djltcn-1 NcEJn"
+    >
+      <div
+        class="header__Search-djltcn-7 grbakr"
+      >
+        <button
+          class="header__SearchIcon-djltcn-8 jyMJiO"
+          data-testid="search-click"
+        >
+          <img
+            alt="Search"
+            src="/images/icons/search.png"
+          />
+        </button>
+        <input
+          class="header__SearchInput-djltcn-9 kRDVcS"
+          data-testid="search-input"
+          placeholder="Search films and series"
+          value="Joker"
+        />
+      </div>
+      <div
+        class="header__Profile-djltcn-10 fxBgPV"
+      >
+        <button
+          class="header__Picture-djltcn-4 cKvker"
+          src="/images/users//images/test.png.png"
+        />
+        <div
+          class="header__Dropdown-djltcn-5 hPSwBU"
+        >
+          <div
+            class="header__Group-djltcn-1 NcEJn"
+          >
+            <button
+              class="header__Picture-djltcn-4 cKvker"
+              src="/images/users//images/test.png.png"
+            />
+            <p
+              class="header__Link-djltcn-3 dFxyeL"
+            >
+              TestLink
+            </p>
+          </div>
+          <div
+            class="header__Group-djltcn-1 NcEJn"
+          >
+            <p
+              class="header__Link-djltcn-3 dFxyeL"
+            >
+              Sign out
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="header__Container-djltcn-2 header__Feature-djltcn-13 kjZpcb bZbAVy"
+  >
+    <p
+      class="header__Text-djltcn-14 header__FeatureHeader-djltcn-15 kUavZC cnXqgA"
+    >
+      Watch Joker Now
+    </p>
+    <p
+      class="header__Text-djltcn-14 kUavZC"
+    >
+      Forever alone in a crowd...
+    </p>
+    <button
+      class="header__PlayButton-djltcn-6 jDMGzw"
+    >
+      Play
+    </button>
+  </div>
+</div>
+`;

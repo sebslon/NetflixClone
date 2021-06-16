@@ -22,7 +22,9 @@ import {
 
 export default function Header({ background = true, children, ...otherProps }) {
   return background ? (
-    <Background {...otherProps}>{children}</Background>
+    <Background {...otherProps} data-testid="header-bg">
+      {children}
+    </Background>
   ) : (
     children
   );
@@ -90,6 +92,7 @@ Header.Search = function HeaderSearch({
     <Search {...otherProps}>
       <SearchIcon
         onClick={() => setSearchActive((searchActive) => !searchActive)}
+        data-testid="search-click"
       >
         <img src="/images/icons/search.png" alt="Search" />
       </SearchIcon>
@@ -98,11 +101,12 @@ Header.Search = function HeaderSearch({
         onChange={({ target }) => setSearchTerm(target.value)}
         placeholder="Search films and series"
         active={searchActive}
+        data-testid="search-input"
       />
     </Search>
   );
 };
 
 Header.PlayButton = function HeaderPlayButton({ children, ...otherProps }) {
-  return <PlayButton {...otherProps}>{children}</PlayButton>
-}
+  return <PlayButton {...otherProps}>{children}</PlayButton>;
+};
