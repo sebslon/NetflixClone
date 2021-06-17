@@ -36,7 +36,7 @@ export default function SignIn() {
       <HeaderContainer>
         <Form>
           <Form.Title>Sign In</Form.Title>
-          {error && <Form.Error>{error}</Form.Error>}
+          {error && <Form.Error data-testid="error">{error}</Form.Error>}
 
           <Form.Base onSubmit={handleSignIn} method="POST">
             <Form.Input
@@ -50,7 +50,7 @@ export default function SignIn() {
               value={password}
               onChange={({ target }) => setPassword(target.value)}
             />
-            <Form.Submit disabled={isInputEmpty} type="submit">Sign In</Form.Submit>
+            <Form.Submit disabled={isInputEmpty} type="submit" data-testid="sign-in">Sign In</Form.Submit>
           </Form.Base>
 
           <Form.Text>

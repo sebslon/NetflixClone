@@ -1,9 +1,10 @@
 # Netflix Clone
 
-React Netflix application with Firebase Authentication.
-Styled with use of styled-components.
-Tested with RTL.
+React Netflix application with Firebase Authentication.\
+Styled with use of styled-components.\
+Tests: RTL.<br>
 
+Available here: https://sebslon.github.io/NetflixClone
 ## Available Scripts
 
 In the project directory, you can run:
@@ -28,3 +29,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
