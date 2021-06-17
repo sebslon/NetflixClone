@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link as ReactRouterLink } from "react-router-dom";
 
+import { publicURL } from '../../constants';
 import {
   Background,
   ButtonLink,
@@ -78,7 +79,7 @@ Header.Logo = function HeaderLogo({ to, ...otherProps }) {
 };
 
 Header.Picture = function HeaderPicture({ src, ...otherProps }) {
-  return <Picture {...otherProps} src={`/images/users/${src}.png`} />;
+  return <Picture {...otherProps} src={`${publicURL}/images/users/${src}.png`} />;
 };
 
 Header.Search = function HeaderSearch({
@@ -94,7 +95,7 @@ Header.Search = function HeaderSearch({
         onClick={() => setSearchActive((searchActive) => !searchActive)}
         data-testid="search-click"
       >
-        <img src="/images/icons/search.png" alt="Search" />
+        <img src={`${publicURL}/images/icons/search.png`} alt="Search" />
       </SearchIcon>
       <SearchInput
         value={searchTerm}

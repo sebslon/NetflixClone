@@ -1,5 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
+import { publicURL } from '../../../constants';
+
 export const LockBody = createGlobalStyle`
   body {
     overflow: hidden;
@@ -23,7 +25,7 @@ export const Spinner = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
-    background-image: url(/images/misc/spinner.png);
+    background-image: url(publicURL + '/images/misc/spinner.png');
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: -150px;
