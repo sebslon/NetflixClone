@@ -1,5 +1,7 @@
 import { createContext, useContext, useState } from "react";
 
+import { publicURL } from '../../constants';
+
 import {
   Container,
   Content,
@@ -62,13 +64,13 @@ Card.Feature = function CardFeature({ children, category, ...otherProps }) {
 
   return showFeature ? (
     <Feature {...otherProps}
-      src={`/images/${category}/${itemFeature.genre}/${itemFeature.slug}/large.jpg`}
+      src={`${publicURL}/images/${category}/${itemFeature.genre}/${itemFeature.slug}/large.jpg`}
     >
       <Content>
         <FeatureTitle>{itemFeature.title}</FeatureTitle>
         <FeatureText>{itemFeature.description}</FeatureText>
         <FeatureClose onClick={() => setShowFeature(false)}>
-          <img src="/images/icons/close.png" alt="close" />
+          <img src={`${publicURL}/images/icons/close.png`} alt="close" />
         </FeatureClose>
 
         <Group margin="30px 0" flexDirection="row" alignItems="center">
