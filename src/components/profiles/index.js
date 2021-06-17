@@ -1,5 +1,7 @@
 import { Container, Title, List, Item, Picture, Name } from './styles/profiles';
 
+import { publicURL } from "../../constants";
+
 export default function Profiles({ children, ...otherProps }) {
   return <Container {...otherProps}>{children}</Container>
 }
@@ -17,7 +19,7 @@ Profiles.User = function ProfilesItem({ children, ...otherProps }) {
 }
 
 Profiles.Picture = function ProfilesPicture ({ src, children, ...otherProps }) {
-  return <Picture {...otherProps} src={src ? `/images/users/${src}.png` : '/images/misc/loading.gif'}></Picture>
+  return <Picture {...otherProps} src={src ? `${publicURL}/images/users/${src}.png` : `${publicURL}/images/misc/loading.gif`}></Picture>
 }
 
 Profiles.Name = function ProfilesName ({ children, ...otherProps }) {

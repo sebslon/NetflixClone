@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 
 import * as ROUTES from "./constants/routes";
+import { publicURL } from "./constants";
 import { useAuth } from "./hooks";
 import { Home, Browse, SignIn, SignUp } from "./pages";
 import { IsUserRedirect, ProtectedRoute } from "./helpers/protecting-routes";
@@ -9,7 +10,7 @@ export default function App() {
   const { user } = useAuth();
   
   return (
-    <Router>
+    <Router basename={publicURL} >
       <Switch>
         <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_IN}>
           <SignIn />

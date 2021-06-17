@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import Fuse from 'fuse.js';
 
 import * as ROUTES from "../constants/routes";
+import { publicURL } from "../constants";
 import logo from "../logo.svg";
 
 import { FooterContainer } from './footer';
@@ -90,7 +91,7 @@ export function BrowseContainer({ slides }) {
             <Card.Entities>
               {slideItem.data.map((item) => (
                 <Card.Item key={item.docId} item={item}>
-                  <Card.Image src={`/images/${category}/${item.genre}/${item.slug}/small.jpg`} />
+                  <Card.Image src={`${publicURL}/images/${category}/${item.genre}/${item.slug}/small.jpg`} />
                   <Card.Meta>
                     <Card.SubTitle>{item.title}</Card.SubTitle>
                     <Card.Text>{item.description}</Card.Text>
@@ -101,7 +102,7 @@ export function BrowseContainer({ slides }) {
             <Card.Feature category={category}>
               <Player>
                 <Player.Button />
-                <Player.Video src="/videos/bunny.mp4" />
+                <Player.Video src={publicURL + "/videos/bunny.mp4"} />
               </Player>
             </Card.Feature>
           </Card>
