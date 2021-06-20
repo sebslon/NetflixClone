@@ -1,7 +1,7 @@
 # Netflix Clone
 
 React Netflix application with Firebase Authentication.\
-Styled with use of styled-components.\
+(Compound) Components styled with use of styled-components.\
 Tests: RTL.<br>
 
 Available here: https://sebslon.github.io/NetflixClone
